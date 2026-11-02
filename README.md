@@ -16,6 +16,10 @@ An MSc research portfolio project investigating whether machine-learning anomaly
 4. Evaluate false positives *and* false negatives using a held-out test set.
 5. Document computational, reproducibility and deployment limitations.
 
+## Newly inspected benchmark test dataset
+
+An additional CSV supplied on **2 November 2026** has **82,332 rows and 45 columns**, and its class distribution matches the standard **UNSW-NB15 predefined testing set** (37,000 normal, 45,332 attack). It is **not** the 211,043-row CSV in the original Colab exports. The official 175,341-row training file is still needed for a leakage-safe benchmark. The uploaded test data is **not** stored in this public repository; see [provenance and SHA-256](docs/dataset-provenance.md). Do **not** train on the test partition and then present results as held-out benchmark performance.
+
 ## Reported dissertation results
 
 | Comparison | Test records | False positives before → after | Relative FP reduction | Attack recall before → after |
