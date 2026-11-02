@@ -24,6 +24,8 @@ An MSc research portfolio project investigating whether machine-learning anomaly
 | Isolation Forest comparator vs tuned Autoencoder | 63,313 | 12,235 → 5,611 | 54.14% | 39.89% → 97.52% |
 | TabNet threshold 0.50 vs 0.94 | 42,209 | 7,347 → 3,145 | 57.19% | 99.65% → 86.74% |
 
+![Dissertation-reported false-positive counts; not independently reproduced](figures/reported_false_positives.svg)
+
 **How to interpret:** These are not matched cross-model benchmark runs. The Autoencoder baseline is an *Isolation Forest comparator*, not an untuned Autoencoder. TabNet reduces false positives but also reduces attack recall; do not rank models purely on relative FP reduction. [Results and qualifications](docs/results.md).
 
 ## Architecture
@@ -90,6 +92,13 @@ source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -e . pytest
 python -m pytest -q
+```
+
+To run a smoke test without the missing original dataset, generate **synthetic educational data** (results are not research findings):
+
+```bash
+python scripts/make_synthetic_flows.py --output data/raw/synthetic_demo.csv
+python -m soc_alerts.cli --csv data/raw/synthetic_demo.csv --model isolation_forest
 ```
 
 The basic installation runs **Isolation Forest**. Install optional models separately:
