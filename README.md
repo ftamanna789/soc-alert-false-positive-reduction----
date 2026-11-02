@@ -164,6 +164,11 @@ The first plot uses the **dissertation's reported FP counts** and visibly labels
 
 Run `python -m pytest -q`. GitHub Actions runs the base-dependency tests on Python 3.10–3.12. The neural model branches depend on large optional libraries and are **not** currently covered by CI; neither has been validated against the missing original dataset.
 
+
+## Project status
+
+The documented research repository and reference implementation are available for review. See the [release status and verification checklist](docs/release-status.md) for completed work and the remaining limitations (original-data replication, neural-model CI and latest GitHub Actions status).
+
 ## Important limitations
 
 - **Dataset identity:** Uploaded code exports describe a 211,043-row, 44-column `train_test_network.csv`; this does not match canonical published UNSW-NB15 file schemas/sizes. Its real lineage cannot be confirmed without the CSV. [Investigation](docs/dataset-provenance.md).
