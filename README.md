@@ -180,6 +180,15 @@ Further reading: [Methodology](docs/methodology.md) · [Results](docs/results.md
 
 UNSW Canberra's [official UNSW-NB15 project page](https://research.unsw.edu.au/projects/unsw-nb15-dataset) documents the canonical source. That page is included **for verification**, not as proof that the supplied project CSV is that dataset.
 
+
+## Presenting this research to employers
+
+- [Research overview aligned to the MSc report](docs/research-overview.md)
+- [CV project entries for SOC, cybersecurity and IT roles](docs/cv-project-entry.md)
+- [Portfolio case study and LinkedIn text](docs/portfolio-project-entry.md)
+
+The percentages are dissertation-reported comparisons, **not** independently replicated outputs of the current reference code. Read the dataset provenance and recall trade-offs before quoting them.
+
 ## Attribution
 
 Original dissertation research and experiments by **Fouzia Tamanna**, University of Hertfordshire. Repository modules are a separately organised reference implementation. No software reuse licence has yet been selected; ask the repository owner before assuming reuse rights.
